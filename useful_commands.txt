@@ -1,0 +1,2 @@
+sudo rsync -av -f"+ */" -f"- *" "KITTI" "KITTI_sample_small"
+for file in $(ls -p | grep -v / | tail -100); do sudo cp -r $file /home/manojpc/KITTI_sample/object/training/colored_0/; done
